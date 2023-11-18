@@ -1,0 +1,169 @@
+*, *::before, *::after { box-sizing: border-box; }
+:root {
+    --primary-dark-color: #082032;
+    --primary-medium-color: #93B1A6;
+    --accent-light-color: #334756;
+    --accent-medium-color: #2C394B;
+    --font: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--primary-dark-color);
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+    line-height: 2em;
+    font-size: 0.75em;
+    color: var(--primary-medium-color);
+    margin:0;
+}
+
+header {
+    margin: 50px auto;
+    border-radius: 10px;
+    border: 3px solid #999;
+    width: 650px;
+    height: 75vh;
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+  }
+
+  nav {
+    width: auto;
+    background-color: var(--accent-light-color);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 0px;
+    margin-right: 3px;
+    width: 644px;
+  }
+
+h1 {
+    color: white;
+    background-color: var(--accent-medium-color);
+    padding: 10px;
+    border-radius: 10px;
+    width: 400px;
+    margin: 10px auto;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--accent-medium-color);
+}
+
+h2 {
+    font-size: 1rem;
+    font-family: sans-serif;
+    line-height: 2em;
+    color: var(--primary-medium-color);
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: var(--accent-medium-color);
+    display: none;
+    border-radius: 10px;
+}
+
+button {
+	box-shadow: 0px 10px 14px -7px #276873;
+	background-color:#599bb3;
+	border-radius:8px;
+	display:inline-block;
+	color:#ffffff;
+	font-size:calc(2vmin);
+	padding:5px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+    margin: 10px;
+    align-items: center;
+}
+
+button:hover {
+	background-color:#408c99;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+
+/* #AllPoses {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: auto;
+  height: 500px;
+  justify-content: flex-start;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: 3px solid #999;
+} */
+
+.centered-list {
+  list-style: none;
+  padding: 0;
+  text-align: center; /* Aligns the text within the <ul> */
+}
+
+.centered-list ul {
+  display: inline-block; /* Places list items horizontally */
+  margin: 0 10px; /* Adjust margin as needed */
+}
+
+
+h3 {
+  font-size: 1rem;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  p {
+    text-align: left;
+    font-size: calc(2vmin);
+    color: white;
+    margin: 10px;
+  }
+  
+  
+  /* links */
+  a:link, a:visited, a:hover, a:active {
+    color: whitesmoke;
+  }
+  
+/* Inside your CSS file or component's styles */
+.selected-pose-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pose-details {
+  display: flex;
+  align-items: flex-start; /* Align items at the start of the cross axis */
+}
+
+.pose-description {
+  margin-right: 20px; /* Adjust the spacing between description and image */
+}
+
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    header {
+      width: auto-fit;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 600px and up) */
+  @media only screen and (min-width: 601px) {
+  header {
+    padding: none;
+    width: 650px;
+    }
+  }
